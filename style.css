@@ -1,0 +1,128 @@
+body {
+  width: 215px;
+  font-family: arial, sans-serif;
+  color: #222;
+  display: grid;
+  grid-template-areas: "display display display display"
+                       "clear divide multiply subtract"
+                       "seven eight nine add"
+                       "four five six add"
+                       "one two three equal"
+                       "zero zero float equal"
+}
+
+.display{
+  width: 230px; height: 50px;
+  grid-area: display;
+  font-family: 'Gugi', monospace;
+  font-size: 50px;
+  text-align: right;
+  margin: 5px;
+  padding-bottom: 5px;
+  border: solid 2px;
+  border-color: #DDD;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px;
+}
+
+button {
+  font-size: 20px;
+  text-align: center;
+  margin: 5px;
+  background-color: #EEE;
+  border: solid 1px;
+  border-color: #DDD;
+  border-radius: 2px;
+  box-shadow: 3px 3px 5px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.1s;
+  border-color: green;
+}
+
+button:click {
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+
+button, .small {
+  width: 50px; height: 50px;
+}
+
+button, .long {
+  width: 50px; height: 110px;
+}
+
+button, .wide {
+  width: 110px; height: 50px;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#o-divide {
+  grid-area: divide;
+}
+
+#o-multiply {
+  grid-area: multiply;
+}
+
+#o-subtract {
+  grid-area: subtract;
+}
+
+#o-add {
+  grid-area: add;
+}
+
+#equal {
+  grid-area: equal;
+}
+
+#n1 {
+  grid-area: one;
+}
+
+#n2 {
+  grid-area: two;
+}
+
+#n3 {
+  grid-area: three;
+}
+
+#n4 {
+  grid-area: four;
+}
+
+#n5 {
+  grid-area: five;
+}
+
+#n6 {
+  grid-area: six;
+}
+
+#n7 {
+  grid-area: seven;
+}
+
+#n8 {
+  grid-area: eight;
+}
+
+#n9 {
+  grid-area: nine;
+}
+
+#n0 {
+  grid-area: zero;
+}
+
+#float {
+  grid-area: float;
+}
