@@ -42,9 +42,9 @@ button:hover {
   border-color: green;
 }
 
-button:click {
+button:action {
   transform: scale(0.9);
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 button, .small {
